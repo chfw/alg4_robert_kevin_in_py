@@ -30,7 +30,7 @@
     2: 141 110 108 86 79 51 42 18 14
     ...
 
-"""
+"""  # flake8: noqa
 
 
 class Graph(object):
