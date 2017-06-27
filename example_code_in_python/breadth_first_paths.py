@@ -3,6 +3,7 @@
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     :copyright: (c) 2017 C. W.
+    :license: GPLv3
 
     Run breadth first search on an undirected graph.
     Runs in O( E + V ) time

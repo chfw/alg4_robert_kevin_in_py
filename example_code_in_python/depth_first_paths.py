@@ -3,6 +3,7 @@
     ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     :copyright: (c) 2017 by C. W.
+    :license: GPLv3
 
     Run depth first search on an undirected graph.
     Runs in O( E + V ) time.

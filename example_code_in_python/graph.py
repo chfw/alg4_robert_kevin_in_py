@@ -3,6 +3,7 @@
     ~~~~~~~~~~~~~~
 
     :copyright: (c) 2017 by C. W.
+    :license: GPLv3
 
     A graph, implemented using an array of lists.
     Parallel edges and self-loops allowed

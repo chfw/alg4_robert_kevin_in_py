@@ -39,3 +39,7 @@ REF   PROGRAM                      DESCRIPTION
 .. _depth_first_paths.py: example_code_in_python/depthth_first_paths.py
 .. _breadth_first_paths.py: example_code_in_python/breadth_first_paths.py
 
+License
+--------------------------------------------------------------------------------
+
+These code is released under GPLv3.
