@@ -29,7 +29,7 @@ Chapter 4 Graphs
 ===== ============================ ===============================
 REF   PROGRAM                      DESCRIPTION
       `graph.py`_                  undirected graph
-4.1   `depth_first_search.py`_     depth-first searcin in a graph
+      `depth_first_search.py`_     depth-first searcin in a graph
 4.2   `breadth_first_paths.py`_    paths in a graph (DFS)
 ===== ============================ ===============================
 

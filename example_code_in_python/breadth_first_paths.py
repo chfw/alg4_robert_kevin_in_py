@@ -26,7 +26,7 @@
 
     largeG.txt test is not included here. Please try it on your own
 
-""" #flake8: noqa
+"""  # flake8: noqa
 from collections import deque
 
 
@@ -100,8 +100,9 @@ def main():
 
     for v in range(G.V()):
         if bfs.has_path_to(v):
-            print("%s to %s (%s): " % (s, v, bfs.dist_to(v))),
-            print('-'.join([str(x) for x in bfs.path_to(v)]))
+            message = "%s to %s (%s):  " % (s, v, bfs.dist_to(v))
+            message += '-'.join([str(x) for x in bfs.path_to(v)])
+            print(message)
         else:
             print("%d to %d (-):  not connected" % (s, v))
 

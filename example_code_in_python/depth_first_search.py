@@ -54,14 +54,15 @@ def main():
     G = Graph.from_txt(txt_file)
     s = int(sys.argv[2])
     search = DepthFirstSearch(G, s)
+    message = ""
     for v in range(G.V()):
         if search.marked(v):
-            print("%s" % v),
-    print("")
+            message += "%s " % v
+    print(message)
     if search.count() != G.V():
-        print("NOT"),
-
-    print("connected")
+        print("NOT connected"),
+    else:
+        print("connected")
 
 
 if __name__ == '__main__':
