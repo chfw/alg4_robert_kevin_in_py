@@ -5,19 +5,19 @@ from textwrap import dedent
 from six import StringIO
 
 
-MODULES = [
-    "graph",
-    "depth_first_search",
-    "breadth_first_paths"
-]
+def test_graph():
+    module = __import__('graph')
+    _verify_module(module)
 
 
-def test_example_codes():
-    for module_name in MODULES:
-        print("Verifying %s.py ..." % module_name)
-        module = __import__(module_name)
-        _verify_module(module)
-        print("Done")
+def test_depth_first_search():
+    module = __import__('depth_first_search')
+    _verify_module(module)
+
+
+def test_breadth_first_search():
+    module = __import__('breadth_first_search')
+    _verify_module(module)
 
 
 def _verify_module(module):
