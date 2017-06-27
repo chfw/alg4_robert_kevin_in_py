@@ -20,4 +20,4 @@ Chapter 4 Graphs
 -     `graph.py`_    undirected graph
 ===== =============  ========================
 
-.. graph.py: example_code_in_python/graph.py
+.. _graph.py: example_code_in_python/graph.py
