@@ -80,7 +80,7 @@ def main():
         components[cc.id(v)].append(v)
 
     for sub in components.values():
-        print ' '.join([str(x) for x in sub])
+        print(' '.join([str(x) for x in sub]))
 
 
 if __name__ == '__main__':
