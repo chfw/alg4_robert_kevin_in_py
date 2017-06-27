@@ -16,7 +16,7 @@ def test_depth_first_search():
 
 
 def test_breadth_first_search():
-    module = __import__('breadth_first_search')
+    module = __import__('breadth_first_paths')
     _verify_module(module)
 
 
