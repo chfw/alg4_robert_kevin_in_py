@@ -32,12 +32,14 @@ REF   PROGRAM                      DESCRIPTION
 .     `depth_first_search.py`_     depth-first searcin in a graph
 4.1   `depth_first_paths.py`_      paths in a graph (DFS)
 4.2   `breadth_first_paths.py`_    paths in a graph (BFS)
+4.3   `cc.py`_                     connected components of a graph
 ===== ============================ ===============================
 
 .. _graph.py: example_code_in_python/graph.py
 .. _depth_first_search.py: example_code_in_python/depth_first_search.py
 .. _depth_first_paths.py: example_code_in_python/depthth_first_paths.py
 .. _breadth_first_paths.py: example_code_in_python/breadth_first_paths.py
+.. _cc.py: example_code_in_python/cc.py
 
 License
 --------------------------------------------------------------------------------

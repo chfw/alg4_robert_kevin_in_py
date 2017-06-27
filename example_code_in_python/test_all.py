@@ -25,6 +25,11 @@ def test_breadth_first_search():
     _verify_module(module)
 
 
+def test_cc():
+    module = __import__('cc')
+    _verify_module(module)
+
+
 def _verify_module(module):
     params = _parse_fixtures(module.__doc__)
     assert len(params) > 0
@@ -45,7 +50,15 @@ def _verify_results(actual, expected):
     if len(actual) > len(expected):
         eq_(actual[:len(expected)], expected)
     else:
-        eq_(actual, expected)
+        for left, right in zip(actual, expected):
+            if len(left) > len(right):
+                if right.endswith('...'):
+                    right = right[:-3]
+                    assert left.startswith(right)
+                else:
+                    eq_(left, right)
+            else:
+                eq_(left, right)
 
 
 def _parse_fixtures(docstring):
