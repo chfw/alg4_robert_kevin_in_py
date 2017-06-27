@@ -50,7 +50,7 @@ class Graph(object):
             V = int(V)
             E = int(graphfile.readline().strip())
             g = cls(V)
-            for _ in xrange(E):
+            for _ in range(E):
                 v, w = map(int, graphfile.readline().split())
                 g.add_edge(v, w)
         return g
