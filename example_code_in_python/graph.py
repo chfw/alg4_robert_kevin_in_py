@@ -40,7 +40,7 @@ class Graph(object):
         self.__V = V
         self.__E = 0
         self.__adj = []
-        for v in xrange(V):
+        for v in range(V):
             self.__adj.append([])
 
     @classmethod

@@ -1,7 +1,7 @@
 Un-official example codes in Python for Algorithms, 4th Edition
 ================================================================================
 
-.. image:: https://api.travis-ci.org/chfw/alg4_robert_kevin_in_py.svg?branch=master
+.. image:: https://travis-ci.org/chfw/alg4_robert_kevin_in_py.svg?branch=master
    :target: http://travis-ci.org/chfw/alg4_robert_kevin_in_py
 
 
@@ -12,6 +12,7 @@ book::
     Copyright (c) 2000 - 2016 Robert Sedgewick and Kevin Wayne
 
 It is also made for me as a reference and hopefully for you too.
+
 
 Chapter 4 Graphs
 --------------------------------------------------------------------------------
