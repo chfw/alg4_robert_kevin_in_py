@@ -19,8 +19,8 @@ Note on the source codes
 In order to serve the education purpose, I have hidden the differences of python
 2 and python 3 in the following areas:
 
-# `range` is used instead of `xrange` in python 2, though it is not efficient
-  for large inputs
+#. `range` is used instead of `xrange` in python 2, though it is not efficient
+   for large inputs
 
 
 Chapter 4 Graphs
@@ -28,12 +28,12 @@ Chapter 4 Graphs
 
 ===== ============================ ===============================
 REF   PROGRAM                      DESCRIPTION
--     `graph.py`_                  undirected graph
+      `graph.py`_                  undirected graph
 4.1   `depth_first_search.py`_     depth-first searcin in a graph
 4.2   `breadth_first_paths.py`_    paths in a graph (DFS)
 ===== ============================ ===============================
 
 .. _graph.py: example_code_in_python/graph.py
 .. _depth_first_search.py: example_code_in_python/depth_first_search.py
-.. _breadth_first_search.py: example_code_in_python/breadth_first_search.py
+.. _breadth_first_paths.py: example_code_in_python/breadth_first_paths.py
 
