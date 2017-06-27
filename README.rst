@@ -19,8 +19,8 @@ Note on the source codes
 In order to serve the education purpose, I have hidden the differences of python
 2 and python 3 in the following areas:
 
- * `range` is used instead of `xrange` in python 2, though it is not efficient
-   for large inputs
+# `range` is used instead of `xrange` in python 2, though it is not efficient
+  for large inputs
 
 
 Chapter 4 Graphs

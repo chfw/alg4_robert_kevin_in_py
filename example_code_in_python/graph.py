@@ -2,7 +2,7 @@
     graph.py
     ~~~~~~~~~~~~~~
 
-    :copyright: (c) 2017 by Onni Software Ltd.
+    :copyright: (c) 2017 by C. W.
 
     A graph, implemented using an array of lists.
     Parallel edges and self-loops allowed
@@ -98,8 +98,8 @@ class Graph(object):
 def main():
     import sys
     txt_file = sys.argv[1]
-    g = Graph.from_txt(txt_file)
-    print(g)
+    G = Graph.from_txt(txt_file)
+    print(G)
 
 
 if __name__ == '__main__':

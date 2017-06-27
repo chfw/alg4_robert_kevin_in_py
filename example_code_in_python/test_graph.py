@@ -5,16 +5,28 @@ from textwrap import dedent
 from six import StringIO
 
 
-def test_graph():
-    import graph
-    module_doc = graph.__doc__
-    params = _parse_fixtures(module_doc)
+MODULES = [
+    "graph",
+    "depth_first_search"
+]
+
+
+def test_example_codes():
+    for module_name in MODULES:
+        print("Verifying %s.py ..." % module_name),
+        module = __import__(module_name)
+        _verify_module(module)
+        print("Done")
+
+
+def _verify_module(module):
+    params = _parse_fixtures(module.__doc__)
     assert len(params) > 0
     for command, result in params:
         args = command.split()[2:]
         with patch.object(sys, 'argv', args):
             with patch('sys.stdout', new_callable=StringIO) as out:
-                graph.main()
+                module.main()
                 _verify_results(out.getvalue().strip().split('\n'), result)
 
 
