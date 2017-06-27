@@ -1,8 +1,8 @@
 import sys
 from mock import patch
-from StringIO import StringIO
 from nose.tools import eq_
 from textwrap import dedent
+from six import StringIO
 
 
 def test_graph():
