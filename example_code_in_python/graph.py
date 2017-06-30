@@ -32,6 +32,7 @@
     ...
 
 """  # flake8: noqa
+from bag import Bag
 
 
 class Graph(object):
@@ -42,7 +43,7 @@ class Graph(object):
         self.__E = 0
         self.__adj = []
         for v in range(V):
-            self.__adj.append([])
+            self.__adj.append(Bag())
 
     @classmethod
     def from_txt(cls, txt_file):
@@ -71,8 +72,8 @@ class Graph(object):
         self.__validate_vertex(v)
         self.__validate_vertex(w)
         self.__E += 1
-        self.__adj[v].insert(0, w)
-        self.__adj[w].insert(0, v)
+        self.__adj[v].add(w)
+        self.__adj[w].add(v)
 
     def adj(self, v):
         self.__validate_vertex(v)
@@ -89,7 +90,7 @@ class Graph(object):
         )
         for index, bag in enumerate(self.__adj):
             ret += "%s: " % index
-            if len(bag) > 0:
+            if bag.size() > 0:
                 ret += " ".join([str(x) for x in bag])
             ret += "\n"
 

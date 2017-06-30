@@ -57,7 +57,7 @@ class Bag(object):
     def __iter__(self):
         iterator = self.__first
         while iterator:
-            yield iterator
+            yield iterator.item
             iterator = iterator.next
 
 
