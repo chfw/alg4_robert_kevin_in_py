@@ -5,6 +5,11 @@ from textwrap import dedent
 from six import StringIO
 
 
+def test_bag():
+    module = __import__('bag')
+    _verify_module(module)
+
+
 def test_graph():
     module = __import__('graph')
     _verify_module(module)
@@ -58,6 +63,12 @@ def _verify_module(module):
                     _verify_simple_commands(command.split('#')[0],
                                             output, module)
 
+        elif "<" in command:
+            run_command, stdin_file = command.split('<')
+            with open(stdin_file.strip(), 'r') as f:
+                with patch('sys.stdin', new=f):
+                    _verify_simple_commands(run_command.strip(),
+                                            result, module)
         else:
             _verify_simple_commands(command, result, module)
 

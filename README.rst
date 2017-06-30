@@ -22,6 +22,17 @@ In order to serve the education purpose, I have hidden the differences of python
 #. `range` is used instead of `xrange` in python 2, though it is not efficient
    for large inputs
 
+Chapter 1 Fundamentals
+--------------------------------------------------------------------------------
+
+===== ============================ ===============================
+REF   PROGRAM                      DESCRIPTION
+.     `bag.py`_                    multiset
+===== ============================ ===============================
+
+.. _bag.py: example_code_in_python/bag.py
+
+
 
 Chapter 4 Graphs
 --------------------------------------------------------------------------------
