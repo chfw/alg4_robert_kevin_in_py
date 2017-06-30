@@ -74,7 +74,7 @@ def main():
 
 def user_input():
     try:
-        return raw_input()
+        return raw_input()  # flake8: noqa
     except:
         return input()
 
