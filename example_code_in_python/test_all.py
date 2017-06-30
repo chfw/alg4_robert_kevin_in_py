@@ -55,42 +55,42 @@ def _verify_module(module):
             for user_input, output in interactive.items():
                 with patch('%s.user_input' % module.__name__) as the_input:
                     the_input.side_effect = [user_input, '']
-                    args = _split_commands(command.split('#')[0])[2:]
-                    custom_module = args[0].split('.')[0]
-                    if module.__name__ != custom_module:
-                        # python graph.py appeared in breadth_first_paths
-                        module = __import__(custom_module)
-                    with patch.object(sys, 'argv', args):
-                        with patch('sys.stdout', new_callable=StringIO) as out:
-                            module.main()
-                            _verify_results(out.getvalue().split('\n'),
-                                            output)
+                    _verify_simple_commands(command.split('#')[0],
+                                            output, module)
 
         else:
-            args = command.split()[2:]
-            custom_module = args[0].split('.')[0]
-            if module.__name__ != custom_module:
-                # python graph.py appeared in breadth_first_paths
-                module = __import__(custom_module)
-            with patch.object(sys, 'argv', args):
-                with patch('sys.stdout', new_callable=StringIO) as out:
-                    module.main()
-                    _verify_results(out.getvalue().strip().split('\n'), result)
+            _verify_simple_commands(command, result, module)
+
+
+def _verify_simple_commands(command, result, module):
+    args = _split_commands(command)[2:]
+    custom_module = args[0].split('.')[0]
+    if module.__name__ != custom_module:
+        # python graph.py appeared in breadth_first_paths
+        module = __import__(custom_module)
+    with patch.object(sys, 'argv', args):
+        with patch('sys.stdout', new_callable=StringIO) as out:
+            module.main()
+            _verify_results(out.getvalue().split('\n'), result)
 
 
 def _verify_results(actual, expected):
     if len(actual) > len(expected):
-        eq_(actual[:len(expected)], expected)
+        _line_by_line_compare(actual[:len(expected)], expected)
     else:
-        for left, right in zip(actual, expected):
-            if len(left) > len(right):
-                if right.endswith('...'):
-                    right = right[:-3]
-                    assert left.startswith(right)
-                else:
-                    eq_(left, right)
+        _line_by_line_compare(actual, expected)
+
+
+def _line_by_line_compare(actual, expected):
+    for left, right in zip(actual, expected):
+        if len(left) > len(right):
+            if right.endswith('...'):
+                right = right[:-3]
+                assert left.startswith(right)
             else:
                 eq_(left, right)
+        else:
+            eq_(left, right)
 
 
 def _parse_fixtures(docstring):
