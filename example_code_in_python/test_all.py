@@ -40,11 +40,15 @@ def test_symbol_graph():
     _verify_module(module)
 
 
+def test_degrees_of_separation():
+    module = __import__('degrees_of_separation')
+    _verify_module(module)
+
+
 def _verify_module(module):
     params = _parse_fixtures(module.__doc__)
     assert len(params) > 0
     for command, result in params:
-        print(command)
         if "# interactive" in command:
             interactive = {}
             current_command = None
@@ -128,6 +132,14 @@ def _parse_fixtures(docstring):
 def _split_commands(command_string):
     if '" "' in command_string:
         command_string = command_string.replace('" "', '"_"')
-    results = [token.replace('"_"', ' ') if '"_"' in token else token
-               for token in command_string.split()]
+    results = [_cleanse_command(token) for token in command_string.split()]
     return results
+
+
+def _cleanse_command(token):
+    if token == '"_"':
+        return ' '
+    elif token.startswith('"'):
+        return token[1:-1]
+    else:
+        return token
