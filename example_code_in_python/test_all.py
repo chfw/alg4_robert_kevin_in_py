@@ -60,6 +60,14 @@ def test_directed_dfs():
     _verify_module(module)
 
 
+def test_depth_first_directed_path():
+    module = __import__('depth_first_directed_paths')
+    _verify_module(module)
+
+
+# bottom
+
+
 def _verify_module(module):
     params = _parse_fixtures(module.__doc__)
     assert len(params) > 0

@@ -39,18 +39,19 @@ REF              PROGRAM                      DESCRIPTION
 Chapter 4 Graphs
 --------------------------------------------------------------------------------
 
-===================== ============================ ===============================
-REF                   PROGRAM                      DESCRIPTION
-`Chapter 4.1`_        `graph.py`_                  undirected graph
-`Chapter 4.1`_        `depth_first_search.py`_     depth-first searcin in a graph
-4.1                   `depth_first_paths.py`_      paths in a graph (DFS)
-4.2                   `breadth_first_paths.py`_    paths in a graph (BFS)
-4.3                   `cc.py`_                     connected components of a graph
-`Chapter 4.1`_        `symbol_graph.py`_           symbol graph
-`Chapter 4.1`_        `degrees_of_separation.py`_  degrees of separation     
-`Chapter 4.1`_        `digraph.py`_                directed graph
-`Chapter 4.1`_        `directed_dfs.py`_           directed dfs
-===================== ============================ ===============================
+===================== ================================= ===============================
+REF                   PROGRAM                           DESCRIPTION
+`Chapter 4.1`_        `graph.py`_                       undirected graph
+`Chapter 4.1`_        `depth_first_search.py`_          depth-first searcin in a graph
+4.1                   `depth_first_paths.py`_           paths in a graph (DFS)
+4.2                   `breadth_first_paths.py`_         paths in a graph (BFS)
+4.3                   `cc.py`_                          connected components of a graph
+`Chapter 4.1`_        `symbol_graph.py`_                symbol graph
+`Chapter 4.1`_        `degrees_of_separation.py`_       degrees of separation     
+`Chapter 4.1`_        `digraph.py`_                     directed graph
+`Chapter 4.1`_        `directed_dfs.py`_                directed dfs
+`Chapter 4.1`_        `depth_first_directed_graph.py`_  paths in a digraph(DFS)
+===================== ================================= ===============================
 
 .. _Chapter 4.1: http://algs4.cs.princeton.edu/41graph/index.php
 .. _graph.py: example_code_in_python/graph.py
@@ -62,6 +63,7 @@ REF                   PROGRAM                      DESCRIPTION
 .. _degrees_of_separation.py: example_code_in_python/degrees_of_separation.py
 .. _digraph.py: example_code_in_python/digraph.py
 .. _directed_dfs.py: example_code_in_python/directed_dfs.py
+.. _depth_first_directed_graph.py: example_code_in_python/depth_first_directed_graph.py
 
 License
 --------------------------------------------------------------------------------
