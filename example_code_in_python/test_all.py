@@ -65,8 +65,13 @@ def test_directed_dfs():
     _verify_module(module)
 
 
-def test_depth_first_directed_path():
+def test_depth_first_directed_paths():
     module = __import__('depth_first_directed_paths')
+    _verify_module(module)
+
+
+def test_breadth_first_directed_paths():
+    module = __import__('breadth_first_directed_paths')
     _verify_module(module)
 
 
