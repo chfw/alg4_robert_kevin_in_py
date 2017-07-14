@@ -5,6 +5,8 @@
     :copyright: (c) 2017 by C. W.
     :license: GPLv3
 
+    A generic stack, implemented using a singly-linked list.
+
     % python stack.py < tobe.txt
     to be not that or be (2 left on stack)
 """

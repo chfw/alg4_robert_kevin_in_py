@@ -28,10 +28,12 @@ Chapter 1 Fundamentals
 ================ ============================ ===============================
 REF              PROGRAM                      DESCRIPTION
 `Chapter 1.3`_.  `stack.py`_                  LIFO stack
+`Chapter 1.3`_.  `queue.py`_                  FIFO stack
 `Chapter 1.3`_.  `bag.py`_                    multiset
 ================ ============================ ===============================
 
 .. _bag.py: example_code_in_python/bag.py
+.. _queue.py: example_code_in_python/queue.py
 .. _stack.py: example_code_in_python/stack.py
 .. _Chapter 1.3: http://algs4.cs.princeton.edu/13stacks/index.php
 

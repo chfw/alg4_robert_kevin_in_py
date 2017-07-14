@@ -15,6 +15,11 @@ def test_stack():
     _verify_module(module)
 
 
+def test_queue():
+    module = __import__('queue')
+    _verify_module(module)
+
+
 def test_graph():
     module = __import__('graph')
     _verify_module(module)
