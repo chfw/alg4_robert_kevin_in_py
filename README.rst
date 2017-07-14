@@ -45,8 +45,9 @@ REF                   PROGRAM                      DESCRIPTION
 4.2                   `breadth_first_paths.py`_    paths in a graph (BFS)
 4.3                   `cc.py`_                     connected components of a graph
 `Chapter 4.1`_        `symbol_graph.py`_           symbol graph
-`Chapter 4.1`_        `digraph.py`_                directed graph
 `Chapter 4.1`_        `degrees_of_separation.py`_  degrees of separation     
+`Chapter 4.1`_        `digraph.py`_                directed graph
+`Chapter 4.1`_        `directed_dfs.py`_           directed dfs
 ===================== ============================ ===============================
 
 .. _Chapter 4.1: http://algs4.cs.princeton.edu/41graph/index.php
@@ -56,8 +57,9 @@ REF                   PROGRAM                      DESCRIPTION
 .. _breadth_first_paths.py: example_code_in_python/breadth_first_paths.py
 .. _cc.py: example_code_in_python/cc.py
 .. _symbol_graph.py: example_code_in_python/symbol_graph.py
-.. _digraph.py: example_code_in_python/digraph.py
 .. _degrees_of_separation.py: example_code_in_python/degrees_of_separation.py
+.. _digraph.py: example_code_in_python/digraph.py
+.. _directed_dfs.py: example_code_in_python/directed_dfs.py
 
 License
 --------------------------------------------------------------------------------

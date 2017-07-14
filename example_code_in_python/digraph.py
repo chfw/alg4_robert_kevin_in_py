@@ -56,7 +56,7 @@ class Digraph(object):
 
     def adj(self, v):
         self.__validate_vertex(v)
-        self.__adj[v]
+        return self.__adj[v]
 
     def out_degree(self, v):
         self.__validate_vertex(v)
