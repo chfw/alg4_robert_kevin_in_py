@@ -26,16 +26,7 @@
     to
 
 """
-
-
-from collections import namedtuple
-
-
-class Node(namedtuple("Node", "item next")):
-    __slots__ = ()
-
-    def __str__(self):
-        return self.item
+from node import Node
 
 
 class Bag(object):

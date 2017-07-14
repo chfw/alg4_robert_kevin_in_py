@@ -16,7 +16,7 @@ It is also made for me as a reference and hopefully for you too.
 Note on the source codes
 --------------------------------------------------------------------------------
 
-In order to serve the education purpose, I have hidden the differences of python
+In order to serve the education purpose, I have ignored the differences of python
 2 and python 3 in the following areas:
 
 #. `range` is used instead of `xrange` in python 2, though it is not efficient
@@ -25,13 +25,15 @@ In order to serve the education purpose, I have hidden the differences of python
 Chapter 1 Fundamentals
 --------------------------------------------------------------------------------
 
-===== ============================ ===============================
-REF   PROGRAM                      DESCRIPTION
-.     `bag.py`_                    multiset
-===== ============================ ===============================
+================ ============================ ===============================
+REF              PROGRAM                      DESCRIPTION
+`Chapter 1.3`_.  `stack.py`_                  LIFO stack
+`Chapter 1.3`_.  `bag.py`_                    multiset
+================ ============================ ===============================
 
 .. _bag.py: example_code_in_python/bag.py
-
+.. _stack.py: example_code_in_python/stack.py
+.. _Chapter 1.3: http://algs4.cs.princeton.edu/13stacks/index.php
 
 
 Chapter 4 Graphs

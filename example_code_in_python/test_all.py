@@ -10,6 +10,11 @@ def test_bag():
     _verify_module(module)
 
 
+def test_stack():
+    module = __import__('stack')
+    _verify_module(module)
+
+
 def test_graph():
     module = __import__('graph')
     _verify_module(module)
