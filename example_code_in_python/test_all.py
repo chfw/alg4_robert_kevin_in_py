@@ -45,6 +45,11 @@ def test_degrees_of_separation():
     _verify_module(module)
 
 
+def test_digraph():
+    module = __import__('digraph')
+    _verify_module(module)
+
+
 def _verify_module(module):
     params = _parse_fixtures(module.__doc__)
     assert len(params) > 0

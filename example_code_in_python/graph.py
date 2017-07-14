@@ -50,7 +50,8 @@ class Graph(object):
         with open(txt_file, 'r') as graphfile:
             V = graphfile.readline().strip()
             V = int(V)
-            E = int(graphfile.readline().strip())
+            E = graphfile.readline().strip()
+            E = int(E)
             g = cls(V)
             for _ in range(E):
                 v, w = map(int, graphfile.readline().split())
