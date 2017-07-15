@@ -7,7 +7,7 @@
 
     A generic queue, implemented using a linked list
 
-    % python queue.py < tobe.txt
+    % python pyqueue.py < tobe.txt
     to be or not to be (2 left on queue)
 """
 

@@ -15,8 +15,8 @@ def test_stack():
     _verify_module(module)
 
 
-def test_queue():
-    module = __import__('queue')
+def test_pyqueue():
+    module = __import__('pyqueue')
     _verify_module(module)
 
 

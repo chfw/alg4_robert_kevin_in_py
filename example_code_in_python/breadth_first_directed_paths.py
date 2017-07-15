@@ -23,7 +23,7 @@
     3 to 11 (-):  not connected
     3 to 12 (-):  not connected
 """
-from queue import Queue
+from pyqueue import Queue
 from stack import Stack
 
 
