@@ -75,6 +75,11 @@ def test_breadth_first_directed_paths():
     _verify_module(module)
 
 
+def test_directed_cycle():
+    module = __import__('directed_cycle')
+    _verify_module(module)
+
+
 # bottom
 
 

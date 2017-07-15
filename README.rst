@@ -55,6 +55,7 @@ REF                   PROGRAM                             DESCRIPTION
 `Chapter 4.1`_        `directed_dfs.py`_                  directed dfs
 `Chapter 4.1`_        `depth_first_directed_graph.py`_    paths in a digraph(DFS)
 `Chapter 4.1`_        `breadth_first_directed_graph.py`_  paths in a digraph(BFS)
+`Chapter 4.1`_        `directed_cycle.py`_                cycle in a digraph
 ===================== =================================== ===============================
 
 .. _Chapter 4.1: http://algs4.cs.princeton.edu/41graph/index.php
@@ -69,6 +70,7 @@ REF                   PROGRAM                             DESCRIPTION
 .. _directed_dfs.py: example_code_in_python/directed_dfs.py
 .. _depth_first_directed_graph.py: example_code_in_python/depth_first_directed_graph.py
 .. _breadth_first_directed_graph.py: example_code_in_python/breadth_first_directed_graph.py
+.. _directed_cycle.py: example_code_in_python/directed_cycle.py
 
 License
 --------------------------------------------------------------------------------
