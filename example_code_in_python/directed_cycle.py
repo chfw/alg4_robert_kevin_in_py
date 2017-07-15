@@ -25,7 +25,7 @@ class DirectedCycle(object):
         self.__on_stack = [False] * G.V()
         self.__edge_to = [0] * G.V()
         self.__cycle = None
-        
+
         for v in range(G.V()):
             if self.__marked[v] is False and self.__cycle is None:
                 self.__dfs(G, v)
