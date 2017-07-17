@@ -24,7 +24,6 @@
     Computational Biology
 
 """
-from digraph import Digraph
 from directed_cycle import DirectedCycle
 from depth_first_order import DepthFirstOrder
 
@@ -66,48 +65,14 @@ class Topological(object):
                 v, V))
 
 
-class SymbolGraph:
-    def __init__(self, file_name, separator):
-        self.__symbols = {}
-        with open(file_name, 'r') as f:
-            for line in f:
-                tokens = line.strip().split(separator)
-                for token in tokens:
-                    if token not in self.__symbols:
-                        self.__symbols[token] = len(self.__symbols)
-
-        self.__keys = [0] * len(self.__symbols)
-        for k, v in self.__symbols.items():
-            self.__keys[v] = k
-
-        self.__g = Digraph(len(self.__symbols))
-        with open(file_name, 'r') as f:
-            for line in f:
-                tokens = line.strip().split(separator)
-                v = self.__symbols[tokens[0]]
-                for token in tokens[1:]:
-                    self.__g.add_edge(v, self.__symbols[token])
-
-    def contains(self, s):
-        return s in self.__symbols
-
-    def index_of(self, s):
-        return self.__symbols[s]
-
-    def name_of(self, v):
-        return self.__keys[v]
-
-    def digraph(self):
-        return self.__g
-
-
 def main():
     import sys
+    from symbol_digraph import SymbolDigraph
 
     txt_file = sys.argv[1]
     delimiter = sys.argv[2]
 
-    sg = SymbolGraph(txt_file, delimiter)
+    sg = SymbolDigraph(txt_file, delimiter)
     topological = Topological(sg.digraph())
     for v in topological.order():
         print(sg.name_of(v))

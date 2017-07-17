@@ -50,6 +50,11 @@ def test_symbol_graph():
     _verify_module(module)
 
 
+def test_symbol_digraph():
+    module = __import__('symbol_digraph')
+    _verify_module(module)
+
+
 def test_degrees_of_separation():
     module = __import__('degrees_of_separation')
     _verify_module(module)
