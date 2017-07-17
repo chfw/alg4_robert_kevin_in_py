@@ -20,7 +20,6 @@
     Please note the order is reversed.
 
 """
-
 from graph import Graph
 
 
