@@ -85,6 +85,11 @@ def test_depth_first_order():
     _verify_module(module)
 
 
+def test_topological():
+    module = __import__('topological')
+    _verify_module(module)
+
+
 # bottom
 
 

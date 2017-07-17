@@ -78,7 +78,7 @@ class DepthFirstOrder(object):
     def post_order(self):
         return self.__post_order
 
-    def reverse_order(self):
+    def reverse_post(self):
         reverse = Stack()
 
         for v in self.__post_order:
@@ -117,7 +117,7 @@ def main():
     print(message)
 
     message = "Reverse postorder: "
-    message += ' '.join([str(v) for v in dfo.reverse_order()])
+    message += ' '.join([str(v) for v in dfo.reverse_post()])
     print(message)
 
 

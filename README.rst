@@ -57,6 +57,7 @@ REF                   PROGRAM                             DESCRIPTION
 `Chapter 4.1`_        `breadth_first_directed_graph.py`_  paths in a digraph(BFS)
 `Chapter 4.1`_        `directed_cycle.py`_                cycle in a digraph
 `Chapter 4.2`_        `depth_first_order.py`_             depth-first order in a digraph
+`Chapter 4.3`_        `topological.py`_                   topological order in a DAG
 ===================== =================================== ===============================
 
 .. _Chapter 4.1: http://algs4.cs.princeton.edu/41graph/index.php
