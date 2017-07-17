@@ -57,12 +57,13 @@ REF                   PROGRAM                             DESCRIPTION
 `Chapter 4.1`_        `breadth_first_directed_graph.py`_  paths in a digraph(BFS)
 `Chapter 4.1`_        `directed_cycle.py`_                cycle in a digraph
 `Chapter 4.2`_        `depth_first_order.py`_             depth-first order in a digraph
-`Chapter 4.3`_        `topological.py`_                   topological order in a DAG
+`Chapter 4.2`_        `topological.py`_                   topological order in a DAG
 `Chapter 4.3`_        `symbol_digraph.py`_                symbol digraph
 ===================== =================================== ===============================
 
 .. _Chapter 4.1: http://algs4.cs.princeton.edu/41graph/index.php
 .. _Chapter 4.2: http://algs4.cs.princeton.edu/42digraph/index.php
+.. _Chapter 4.3: http://algs4.cs.princeton.edu/43digraph/index.php
 .. _graph.py: example_code_in_python/graph.py
 .. _depth_first_search.py: example_code_in_python/depth_first_search.py
 .. _depth_first_paths.py: example_code_in_python/depthth_first_paths.py
@@ -77,6 +78,7 @@ REF                   PROGRAM                             DESCRIPTION
 .. _directed_cycle.py: example_code_in_python/directed_cycle.py
 .. _depth_first_order.py: example_code_in_python/depth_first_order.py
 .. _symbol_digraph.py: example_code_in_python/symbol_digraph.py
+.. _topological.py: example_code_in_python/topologoical.py
 
 License
 --------------------------------------------------------------------------------
