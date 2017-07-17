@@ -80,6 +80,11 @@ def test_directed_cycle():
     _verify_module(module)
 
 
+def test_depth_first_order():
+    module = __import__('depth_first_order')
+    _verify_module(module)
+
+
 # bottom
 
 
